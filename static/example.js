@@ -1,5 +1,5 @@
 (function($) {
-	var dataUrl = 'http://127.0.0.1:5000/stat',
+	var dataUrl = '/stat',
 		activeHost, activeInstance, activeType, plot, $graph,
 		graphOptions = {
 			xaxes: [{
