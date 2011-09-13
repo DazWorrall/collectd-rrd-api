@@ -96,25 +96,5 @@
 			
 			$hosts.html(html.join(''));			
 		});
-		
-		var start = 1315414680,
-			end = 1315415430;
-		
-		loadValues('mastermoo.config', 'disk-sdd', 'disk_ops', start, end, function(data) {
-//				plot = $.plot($graph, graphData, $.extend({}, graphOptions, {
-//					xaxis: {
-//						min: from,
-//						max: to,
-//					}})
-//				);
-
-			var series = [];
-
-			for (var i in data) {
-				series.push(data[i]);
-			}
-
-			plot = $.plot($graph, series, graphOptions);
-		})
 	});
 })(jQuery);
