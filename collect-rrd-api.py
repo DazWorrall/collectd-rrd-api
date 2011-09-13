@@ -1,4 +1,4 @@
-from flask import Flask, request, json, jsonify, current_app
+from flask import Flask, request, json, jsonify, current_app, render_template
 from functools import wraps
 from rrdstats import StatsReader
 import sys
