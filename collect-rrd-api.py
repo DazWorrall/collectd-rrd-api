@@ -1,8 +1,12 @@
 from flask import Flask, request, json, jsonify, current_app
 from functools import wraps
 from rrdstats import StatsReader
+import sys
 
-DATA_DIR = '../sample-data/rrd'
+if len(sys.argv) > 1:
+    DATA_DIR = sys.argv[1]
+else:
+    DATA_DIR = '../sample-data/rrd'
 
 app = Flask(__name__)
 app.debug = True
