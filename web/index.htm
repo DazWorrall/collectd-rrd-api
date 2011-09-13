@@ -1,0 +1,39 @@
+<html>
+	<head>
+		<script type="text/javascript" src="jquery-1.6.3.min.js"></script>
+		<script type="text/javascript" src="jquery.flot.min.js"></script>
+		<script type="text/javascript" src="example.js"></script>
+		
+		<style type="text/css">
+			#graph {
+				width: 800px;
+				height: 400px;
+			}
+		</style>
+	</head>
+	
+	<body>
+		<div id="container">
+			<label>
+				Start:
+				<input type="text" name="start" value="" />
+			</label>
+			
+			<label>
+				End:
+				<input type="text" name="end" value="" />
+			</label>
+			
+			<h1>Hosts</h1>
+			<ul id="hosts"></ul>
+			
+			<h1>Instances</h1>
+			<ul id="instances"></ul>
+			
+			<h1>Types</h1>
+			<ul id="types"></ul>
+			
+			<div id="graph"></div>
+		</div>
+	</body>
+</html>
